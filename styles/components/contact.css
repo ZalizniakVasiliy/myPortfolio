@@ -1,0 +1,130 @@
+/* CONTACT */
+.contact-content {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.contact-items {
+    max-width: 275px;
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 275px;
+    list-style: none;
+}
+
+.contact-item {
+    margin: 24px 0 0;
+}
+
+.contact-item:first-child {
+    margin: 0;
+}
+
+.contact-link {
+    padding: 26px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.contact-link:focus {
+    box-shadow: 0 0 0 2px #25ca7f;
+}
+
+.contact-icon {
+    font-size: 32px;
+    color: #25ca7f;
+}
+
+.contact-info-place,
+.contact-phone,
+.contact-mail {
+    margin: 16px 0 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-style: normal;
+    color: #fff;
+}
+
+.contact-form {
+    padding: 32px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 656px;
+}
+
+.contact-data {
+    margin: 24px 0 0;
+    display: flex;
+    gap: 24px;
+}
+
+.contact-data:first-child {
+    margin: 0;
+}
+
+.contact-info {
+    padding: 12px 0;
+    border-color: transparent;
+    outline: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    flex-basis: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    resize: none;
+    color: #fff;
+    background-color: transparent;
+}
+
+.contact-info:focus::placeholder {
+    color: #25ca7f;
+}
+
+input:valid {
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 2px solid #25ca7f;
+    border-radius: 8px;
+}
+
+.contact-user-actions {
+    margin: 32px 0 0;
+    text-align: center;
+}
+
+.btn--primary:hover {
+    background-color: #343a40;
+    color: #25ca7f;
+    transition: all 0.5s;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 32px;
+    }
+
+    .contact-items {
+        min-width: 100%;
+    }
+
+    .contact-form {
+        flex-basis: 100%;
+    }
+
+    .contact-data {
+        flex-direction: column;
+    }
+
+    .btn--primary {
+        width: 100%;
+    }
+}

@@ -1,0 +1,163 @@
+/* ABOUT */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-description {
+    flex-basis: 600px;
+}
+
+.about-text {
+    margin: 0;
+    padding: 24px 32px;
+    line-height: 32px;
+    position: relative;
+}
+
+.about-text::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 40px solid rgba(255, 255, 255, 0.2);
+}
+
+.highlighted-text {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+.about-actions {
+    display: flex;
+    margin-top: 56px;
+}
+
+.about-avatar {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    margin-left: 60px;
+}
+
+.about-avatar img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.btn--secondary:hover {
+    color: #25ca7f;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.5s;
+}
+
+.about-skills {
+    margin-top: 56px;
+}
+
+.about-skills-list {
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 26px;
+    list-style: none;
+}
+
+.about-skills-item {
+    flex-basis: 138px;
+}
+
+.about-skills-link {
+    display: block;
+    width: 100%;
+    height: 160px;
+    padding: 24px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.about-skills-img {
+    width: 100%;
+    max-height: 80px;
+}
+
+.about-skills-label {
+    margin: 12px 0 0;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+}
+
+.about-skills-label.html {
+    color: #ef7f4f;
+}
+
+.about-skills-label.css {
+    color: #30ace0;
+}
+
+.about-skills-label.js {
+    color: #f7df1e;
+}
+
+.about-skills-label.sass {
+    color: #cc85a8;
+}
+
+.about-skills-label.bootstrap {
+    color: #9d70d4;
+}
+
+.about-skills-label.gulp {
+    color: #e47171;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-content {
+        padding-top: 60px;
+        position: relative;
+    }
+
+    .about-description {
+        flex-basis: 100%;
+    }
+
+    .about-text {
+        line-height: 24px;
+    }
+
+    .about-text::after {
+        display: none;
+    }
+
+    .about-actions {
+        margin-top: 32px;
+        justify-content: center;
+    }
+
+    .about-avatar {
+        width: 120px;
+        position: absolute;
+        right: 16px;
+        top: 0;
+    }
+
+    .about-avatar img {
+        border: 2px solid #343a40;
+    }
+
+    .about-skills {
+        margin-top: 32px;
+    }
+}

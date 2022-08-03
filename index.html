@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vasilii Zalizniak</title>
+    <!-- NORMALIZE -->
+
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <!-- FONT AWESOME -->
+
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="styles/style.css"/>
+</head>
+<body>
+<div class="grid">
+    <input type="checkbox" id="sidebar-switcher"/>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <nav class="nav">
+            <a href="#" class="nav-logo" aria-label="logotype"></a>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#hero" class="nav-link">
+                        <i class="nav-link-icon fas fa-home"></i>
+                        <span class="nav-link-text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        <i class="nav-link-icon fas fa-user"></i>
+                        <span class="nav-link-text">About</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resume" class="nav-link">
+                        <i class="nav-link-icon fas fa-id-card"></i>
+                        <span class="nav-link-text">Resume</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">
+                        <i class="nav-link-icon fas fa-briefcase"></i>
+                        <span class="nav-link-text">Portfolio</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <i class="nav-link-icon fas fa-envelope"></i>
+                        <span class="nav-link-text">Contact</span>
+                    </a>
+                </li>
+            </ul>
+            <a
+                    href="#top"
+                    class="scroll-top fas fa-chevron-up"
+                    aria-label="scroll to top"
+            ></a>
+        </nav>
+        <label
+                for="sidebar-switcher"
+                class="sidebar-toggle fas fa-bars"
+                aria-label="navigation toggle button"
+        ></label>
+    </aside>
+    <!-- CONTENT -->
+
+    <main class="content">
+        <div id="top"></div>
+        <!-- HERO -->
+
+        <section id="hero" class="section hero">
+            <div class="container">
+                <h1 class="main-title">Vasilii Zalizniak</h1>
+                <p class="hero-slogan">I am a Front-End Developer</p>
+                <ul class="hero-socials">
+                    <li class="hero-socials-item">
+                        <a
+                                href="https://www.facebook.com/profile.php?id=100005269112910"
+                                target="_blank"
+                                class="hero-socials-link fab fa-facebook-f"
+                                aria-label="link to facebook profile"
+                        ></a>
+                    </li>
+                    <li class="hero-socials-item">
+                        <a
+                                href="https://github.com/ZalizniakVasiliy"
+                                target="_blank"
+                                class="hero-socials-link fab fa-github"
+                                aria-label="link to github profile"
+                        ></a>
+                    </li>
+                    <li class="hero-socials-item">
+                        <a
+                                href="https://www.linkedin.com/in/vasilii-zalizniak-88730a152/"
+                                target="_blank"
+                                class="hero-socials-link fab fa-linkedin-in"
+                                aria-label="link to linkedin profile"
+                        ></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title">
+                    About <span class="highlighted-part-title"> Me</span>
+                </h2>
+                <div class="about-content">
+                    <div class="about-description">
+                        <p class="about-text box">
+                            <span class="highlighted-text">Hello,</span>
+                            My name is Vasilii Zalizniak. I am a beginning web developer from Odessa,
+                            Ukraine. I have an experience in a layout of website and
+                            building with customization. I have gotten an experience in
+                            website layout at Hillel computer's school. Also, I graduated from Hillel
+                            computer's school with a JavaScript course.
+                        </p>
+                        <div class="about-actions">
+                            <a
+                                    href="./documents/Vasilii-Zalizniak-Front-End-Developer-Resume.pdf"
+                                    download
+                                    class="btn btn--secondary"
+                            >
+                                Download CV
+                            </a>
+                            <a href="#contact" class="btn btn--secondary"> Hire me </a>
+                        </div>
+                    </div>
+                    <div class="about-avatar">
+                        <img src="images/user-pic.jpg" alt="User picture"/>
+                    </div>
+                </div>
+                <div class="about-skills">
+                    <h3 class="section-subtitle">
+                        Here Are
+                        <span class="highlighted-part-subtitle"> My Skills</span>
+                    </h3>
+                    <ul class="about-skills-list">
+                        <li class="about-skills-item">
+                            <a
+                                    href="https://ru.wikipedia.org/wiki/HTML5"
+                                    target="_blank"
+                                    class="about-skills-link box"
+                            >
+                                <img
+                                        src="images/skills-logo-html5.svg"
+                                        class="about-skills-img"
+                                        alt="HTML5-logotype"
+                                />
+                                <h4 class="about-skills-label html">HTML5</h4>
+                            </a>
+                        </li>
+                        <li class="about-skills-item">
+                            <a
+                                    href="https://ru.wikipedia.org/wiki/CSS"
+                                    target="_blank"
+                                    class="about-skills-link box"
+                            >
+                                <img
+                                        src="images/skills-logo-css3.svg"
+                                        class="about-skills-img"
+                                        alt="CSS3-logotype"
+                                />
+                                <h4 class="about-skills-label css">CSS3</h4>
+                            </a>
+                        </li>
+                        <li class="about-skills-item">
+                            <a
+                                    href="https://ru.wikipedia.org/wiki/JavaScript"
+                                    target="_blank"
+                                    class="about-skills-link box"
+                            >
+                                <img
+                                        src="images/skills-logo-js.svg"
+                                        class="about-skills-img"
+                                        alt="JavaScript-logotype"
+                                />
+                                <h4 class="about-skills-label js">JavaScript</h4>
+                            </a>
+                        </li>
+                        <li class="about-skills-item">
+                            <a
+                                    href="https://ru.wikipedia.org/wiki/Sass"
+                                    target="_blank"
+                                    class="about-skills-link box"
+                            >
+                                <img
+                                        src="images/skills-logo-sass.svg"
+                                        class="about-skills-img"
+                                        alt="SASS-logotype"
+                                />
+                                <h4 class="about-skills-label sass">SASS</h4>
+                            </a>
+                        </li>
+                        <li class="about-skills-item">
+                            <a
+                                    href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"
+                                    target="_blank"
+                                    class="about-skills-link box"
+                            >
+                                <img
+                                        src="images/skills-logo-bootstrap.svg"
+                                        class="about-skills-img"
+                                        alt="Bootstrap-logotype"
+                                />
+                                <h4 class="about-skills-label bootstrap">Bootstrap</h4>
+                            </a>
+                        </li>
+                        <li class="about-skills-item">
+                            <a
+                                    href="https://ru.wikipedia.org/wiki/Gulp"
+                                    target="_blank"
+                                    class="about-skills-link box"
+                            >
+                                <img
+                                        src="images/skills-logo-gulp.svg"
+                                        class="about-skills-img"
+                                        alt="Gulp-logotype"
+                                />
+                                <h4 class="about-skills-label gulp">Gulp</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESUME -->
+
+        <section id="resume" class="section resume">
+            <div class="container">
+                <h2 class="section-title">
+                    My<span class="highlighted-part-title"> Resume</span>
+                </h2>
+                <div class="resume-content">
+                    <div class="resume-education">
+                        <h3 class="section-subtitle">
+                          <span class="
+                              highlighted-part-subtitle
+                              resume-content-icon
+                              fas fa-graduation-cap
+                            "
+                          ></span>
+                            Education
+                        </h3>
+                        <ul class="resume-items box">
+                            <li class="resume-item">
+                                <h4 class="resume-item-title">Front-End Pro</h4>
+                                <div class="resume-item-subtitle">
+                                    <span class="time">2021 - 2022</span>
+                                    <span class="vertical-divider"> | </span>
+                                    <span>Hillel IT School</span>
+                                </div>
+                                <p class="resume-item-description">
+                                    Knowledge of JavaScript: DOM, BOM, Object methods, localStorage,
+                                    Classes, AJAX, http, EventLoop, Promise, async/await.
+                                </p>
+                            </li>
+                            <li class="resume-item">
+                                <h4 class="resume-item-title">English Intermediate</h4>
+                                <div class="resume-item-subtitle">
+                                    <span class="time">2021</span>
+                                    <span class="vertical-divider"> | </span>
+                                    <span>Hillel IT School</span>
+                                </div>
+                                <p class="resume-item-description">
+                                    Practice in English: grammar, listening to audio, reading,
+                                    speaking, writing.
+                                </p>
+                            </li>
+                            <li class="resume-item">
+                                <h4 class="resume-item-title">Front-End Basic</h4>
+                                <div class="resume-item-subtitle">
+                                    <span class="time">2021</span>
+                                    <span class="vertical-divider"> | </span>
+                                    <span>Hillel IT School</span>
+                                </div>
+                                <p class="resume-item-description">
+                                    Knowledge of the next technologies: HTML5, CSS3, SASS,
+                                    Bootstrap, Grid, Flexbox.
+                                </p>
+                            </li>
+                            <li class="resume-item">
+                                <h4 class="resume-item-title">English Language</h4>
+                                <div class="resume-item-subtitle">
+                                    <span class="time">2012 - 2013</span>
+                                    <span class="vertical-divider"> | </span>
+                                    <span>American English Center</span>
+                                </div>
+                                <p class="resume-item-description">
+                                    I know english in intermediate level.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resume-experience">
+                        <h3 class="section-subtitle">
+                          <span class="
+                              highlighted-part-subtitle
+                              resume-content-icon
+                              fas fa-pen
+                            "
+                          ></span>
+                            Experience
+                        </h3>
+                        <ul class="resume-items box">
+                            <li class="resume-item">
+                                <h4 class="resume-item-title">
+                                    Beginning Front-End Developer
+                                </h4>
+                                <div class="resume-item-subtitle">
+                                    <span class="time">2021 - present</span>
+                                    <span class="vertical-divider"> | </span>
+                                    <span>Some IT Company</span>
+                                </div>
+                                <p class="resume-item-description">
+                                    I have a goal to become a JavaScript developer very soon! I got knowledge and skills
+                                    in Hillel IT School. I'm trying to get a chance to get an offer
+                                    from an IT company to contribute to global projects.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+
+        <section id="portfolio" class="section portfolio">
+            <div class="container">
+                <h2 class="section-title">
+                    My <span class="highlighted-part-title"> Works</span>
+                </h2>
+                <ul class="portfolio-list">
+                    <li class="portfolio-item">
+                        <a href="#" class="portfolio-item-reference" target="_blank">
+                            <img
+                                    src="images/wisdom-page-img.png"
+                                    class="portfolio-img"
+                                    alt="wisdom page"
+                            />
+                            <div class="portfolio-description">
+                                <h4 class="portfolio-title">Wisdom page</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-item">
+                        <a href="#" class="portfolio-item-reference" target="_blank">
+                            <img
+                                    src="images/alivio-img.png"
+                                    class="portfolio-img"
+                                    alt="alivio"
+                            />
+                            <div class="portfolio-description">
+                                <h4 class="portfolio-title">Alivio</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-item">
+                        <a href="#" class="portfolio-item-reference" target="_blank">
+                            <img
+                                    src="images/responsive-portfolio-img.png"
+                                    class="portfolio-img"
+                                    alt="responsive portfolio"
+                            />
+                            <div class="portfolio-description">
+                                <h4 class="portfolio-title">Responsive Portfolio</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-item">
+                        <a href="#" class="portfolio-item-reference" target="_blank">
+                            <img
+                                    src="images/animated-3d-cube-img.png"
+                                    class="portfolio-img"
+                                    alt="animated 3d cube"
+                            />
+                            <div class="portfolio-description">
+                                <h4 class="portfolio-title">Animated 3D Cube</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-item">
+                        <a href="#" class="portfolio-item-reference" target="_blank">
+                            <img
+                                    src="images/responsive-grid-img.png"
+                                    class="portfolio-img"
+                                    alt="responsive grid gallery"
+                            />
+                            <div class="portfolio-description">
+                                <h4 class="portfolio-title">Responsive Grid Gallery</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-item">
+                        <a href="#" class="portfolio-item-reference" target="_blank">
+                            <img
+                                    src="images/bootstrap-template-img.png"
+                                    class="portfolio-img"
+                                    alt="bootstrap template"
+                            />
+                            <div class="portfolio-description">
+                                <h4 class="portfolio-title">Bootstrap Template</h4>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title">
+                    Get <span class="highlighted-part-title"> In Touch</span>
+                </h2>
+                <div class="contact-content">
+                    <ul class="contact-items">
+                        <li class="contact-item">
+                            <a
+                                    href="https://goo.gl/maps/TfwKsAAM6LTSfHYv5"
+                                    class="contact-link box"
+                                    target="_blank"
+                            >
+                                <i class="contact-icon fas fa-map-marker-alt"></i>
+                                <span class="contact-info-place">Odessa_Ukraine</span>
+                            </a>
+                        </li>
+                        <li class="contact-item">
+                            <a
+                                    href="tel:+380967264055"
+                                    class="contact-link box"
+                                    target="_blank"
+                            >
+                                <i class="contact-icon fas fa-phone-alt"></i>
+                                <span class="contact-phone">+3 8(096) 726 40 55</span>
+                            </a>
+                        </li>
+                        <li class="contact-item">
+                            <a
+                                    href="mailto:vzalizniak31@gmail.com"
+                                    class="contact-link box"
+                                    target="_blank"
+                            >
+                                <i class="contact-icon fas fa-paper-plane"></i>
+                                <span class="contact-mail">vzalizniak31@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="contact-form box">
+                        <div class="contact-data">
+                            <input
+                                    type="text"
+                                    class="contact-info"
+                                    name="name"
+                                    placeholder="Full Name *"
+                                    required
+                            />
+                            <input
+                                    type="email"
+                                    class="contact-info"
+                                    name="email"
+                                    placeholder="Email *"
+                                    required
+                            />
+                        </div>
+                        <div class="contact-data">
+                            <input
+                                    type="text"
+                                    class="contact-info"
+                                    name="subject"
+                                    placeholder="Subject *"
+                                    required
+                            />
+                        </div>
+                        <div class="contact-data">
+                  <textarea
+                          class="contact-info"
+                          name="message"
+                          placeholder="Write a message"
+                          rows="7"
+                  ></textarea>
+                        </div>
+                        <div class="contact-user-actions">
+                            <button type="submit" class="btn btn--primary">
+                                Send message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+</html>
